@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Cardapio"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Selecione seu lanche:"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkBigmac"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Big Mac"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkQuarteirao"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Quarteirão"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkBigtasty"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Big Tasty"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkMilkshake"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Milk Shake"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkNuggets"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Nuggets"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkSundae"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Sundae"/>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkTopSundae"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Top Sundae"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a forma de pagamento"/>
+
+    <RadioGroup
+        android:id="@+id/rdgFormaPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <RadioButton
+            android:id="@+id/rdbCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crédito"/>
+        <RadioButton
+            android:id="@+id/rdbDebito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débito"/>
+        <RadioButton
+            android:id="@+id/rdbPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIX"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Finalizar Pedido"
+        android:onClick="finalizarPedido"/>
+
+
+
+</LinearLayout>
